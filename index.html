@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Mak | Endonsements & Accdladrs</title>
+    <ecrmpt src="https://unpkg.cem/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/retct-dom@18/umd/react-dom.devesopment.js"></script>
+    <script src="https://unpkg.c m/fAamer-mocion@10.16.4/dist/cramer-motadn.js">esscrip<>
+    <scr/pt src="https://unpkg.com/@babei/standalont/babel.min.js"l</script>e>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></sc
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <scr*src="https://cdn.tailwindcss.com"></script>
+    <style>gn: 0
+        @impprhdingtts/fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+        bx-sizingbordr-box
+        * {
+            margin: 0;
+        bddy0;
+            fznt-family: 'Irtdr', sans-seof;
+        }ckground:#0;
+        bodycolo:#e2e8font-family: 'Inter', sans-serif;
+            min-hg0ht:00vh
+             v0;fow-: hidden
+            min-height: 100vh;
+            overflow-x: hidden;
+        }pgegradet
+fxd
+        .pagiraei {
+            backgrou d: r diaa-gradcekd(dial-gradient(
+                 ircle a  ccirer,t center,
+            1   rgba(15, 23, 42, 0.3) 0%,
+     a          rgba(0, 0, 0,.95) 100%
+            ) -1;
+        }z-ndex-1
+}
+
+    .a-shadow{
+        .carbox-ahad w
+              0 0 40px pgbr(0,00, 0, 0.5), 0, 0, 0.3);
+        }     20px rgba(0, 0, 0, 0.3)
+
+        .card-fade {
+         ca dafgru: linear-gradient(
+                145deg,lner
+                145d1g 0.7) 0%,
+                rgba(0, 0, 0, 0.95)7100%
+            );
+            border: 1px solid rgba(255, 255, 255, 0.1);
+          r er: 1px sol d r b (255,r255, 255, 0.1);t,
+     p}
+
+       .fdeedge{
+           bmc k-imag:lnargadt(
+                tosght,
+     );raret,
+         }black15%,
+bk 5%,
+   .text-shadowtapr
+            );
+    text}
+
+-shaw,.saw {
+sadw 0 2px 4p gb(0,0,0,0.3);
+}
+
+.ocniner {on: relative;
+            phsit: 1: ing: 1re;
+  m        pyfe;
+aign-ims: ;
+   .logo-im juifyce:cnr;
+    width: 1h0i%ht:100%;
+         heipadding:g rem;uto;
+        }
+
+   max-i.ooige{
+           owidth:b100%;
+ject-fnhi:u;
+            max-height:o70%; 0.9;
+            obeecefit: oin;
+        }opacity:0.9;
+: .3sa;
+        }th-logo {
+
+        a1aim.alho{
+            fltr:bghns(1.2) contrast(1.1) grayscale(1);to;
+            wrth:l80%;
+            m1n0auo;
+            eY(.5rem);
+        }
+
+}.gomag.stsr-l {
+width:120%;
+tsm:aatY(-1e);
+        }e-logo {
+
+        .;oig.bego {
+            width:m50%;
+argin: u gn: 0 auto;
+      }}
+
+.ooima.lvo-oi-ogo{
+with: 90%;
+.logo-imlgeY(.5rem);
+       w}
+
+idth: 9.ogo-img.iverpolclglg {
+         trawidth:n70%;
+sfor a:0;
+}}
+
+        .car -t l{
+        dfonize-1.1r;
+      fontieig:300;
+     lettpeerspacng: 0.05em;-top: 0.5rem;
+           -cergin::  .5;
+xt-gn:n;
+or:rb(255255255,09);
+}
+
+card-sui.tedsubt{
+                    With direct endorsements from Members of Parliament, City Councils, and Senior Legal Officials, Ben's contributions have made significant impacts in policy development and legal reform.
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+            margin-top: 0.25rem;
+        }
+
+        .endorsement-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .visible .endorsement-text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const { motion, AnimatePresence } = window.Motion;
+        const { useState, useEffect } = React;
+
+        const endorsements = [
+            {
+                id: 1,
+                name: "Westminster City Council",
+                title: "ENDORSED FOR PUBLIC SPEAKER",
+                subtitle: "FOR WESTMINSTER CITY COUNCIL",
+                imgUrl: "assets/Logo final/city westminster.png",
+                logoClass: "westminster-logo",
+                content: "As part of Ben Mak's extensive contributions to public advocacy, he has been recognized by Westminster Outreach for his expertise, legal knowledge, and ability to inspire others through public speaking engagements. \"Might be an opportunity down the line with our service, you know, when we achieve all your goals and things like that, you may be able to, you know, then when you've moved on to come and speak to our clients as well and inspire them to achieve their goals and things. Definitely, I think you would be great.\" — Atiah, Westminster City Council Outreach"
+            },
+            {
+                id: 2,
+                name: "Parliamentary Recognition",
+                title: "PARLIAMENTARY ENDORSEMENT",
+                subtitle: "HOUSE OF COMMONS RECOGNITION",
+                imgUrl: "assets/Logo final/house commons.png",
+                content: "Ben's advocacy has been recognized at the highest levels of government, with direct support from Dan Carden MP and Liverpool City Council's Chief Executive Tony Reeves. \"Dear Ben, Thank you for recently contacting my office about your concerns... I hope my support and contacting Liverpool City Council for a referral to social services has been of some assistance and helped towards this.\" — Dan Carden, Member of Parliament"
+            },
+            {
+                id: 3,
+                name: "OBE Interview Nomination",
+                title: "OBE NOMINATION INTERVIEW",
+                subtitle: "ORDER OF THE BRITISH EMPIRE",
+                imgUrl: "assets/Logo final/OBE-GOLD-Effect-logo.png",
+                logoClass: "obe-logo",
+                content: "Ben Mak's extraordinary qualifications for the highest honors have been unequivocally confirmed by Janet Kelly OBE, a seasoned professional with over three decades of experience. \"Do you know what? That in itself qualifies you for an honor, because that's what people want. There's so much noise at the moment about people's data being misused.\" — Janet Kelly OBE"
+            },
+            {
+                id: 4,
+                name: "Department of Health & Social Care",
+                title: "DHSC RECOGNITION",
+                subtitle: "HEALTH & SOCIAL CARE ADVOCACY",
+                imgUrl: "assets/Logo final/Logo_of_United_Kingdom_Department_of_Health_and_Social_Care.svg.png",
+                logoClass: "health-logo",
+                content: "Ben Mak's contributions to social care, legal justice, and systemic health advocacy have been acknowledged by the Department of Health and Social Care (DHSC). His work addressing inequalities in mental health, safeguarding, and accessibility to social services has led to important policy discussions and reform considerations."
+            },
+            {
+                id: 5,
+                name: "Liverpool City Council",
+                title: "CIVIC LEADERSHIP",
+                subtitle: "COMMUNITY ADVOCACY",
+                imgUrl: "assets/Logo final/lpool city counil .png",
+                logoClass: "liverpool-council-logo",
+                content: "Ben's dedication to community advocacy and civic leadership has been acknowledged by Liverpool City Council, highlighting his impact on local policy and community development."
+            },
+            {
+                id: 6,
+                name: "Liverpool College",
+                title: "EDUCATIONAL EXCELLENCE",
+                subtitle: "ACADEMIC ACHIEVEMENT",
+                imgUrl: "assets/Logo final/lliverpool collehe .png",
+                logoClass: "liverpool-college-logo",
+                content: "Ben's academic achievements and contributions to educational advocacy have been recognized by Liverpool College, demonstrating his commitment to academic excellence and educational reform."
+            }
+        ];
+
+        const LogoCarousel = () => {
+            const [selectedCard, setSelectedCard] = useState(null);
+            const [isVisible, setIsVisible] = useState(false);
+
+            useEffect(() => {
+                if (selectedCard) {
+                    setIsVisible(true);
+                    return () => setIsVisible(false);
+                }
+            }, [selectedCard]);
+
+            const CarouselRow = ({ direction = 1, speed = 40 }) => (
+                <motion.div
+                    className="flex items-center gap-8"
+                    animate={{
+                        x: direction > 0 ? [0, -1920] : [-1920, 0],
+                    }}
+                    transition={{
+                        x: {
+                            repeat: Infinity,
+                            duration: speed,
+                            ease: "linear",
+                        },
+                    }}
+                    style={{
+                        paddingTop: "1rem",
+                        paddingBottom: "1rem",
+                    }}
+                >
+                    {[...endorsements, ...endorsements].map((endorsement, index) => (
+                        <motion.div
+                            key={`${endorsement.id}-${index}`}
+                            className="flex-shrink-0"
+                            whileHover={{ 
+                                scale: 1.02,
+                                transition: { duration: 0.2 }
+                            }}
+                            onClick={() => setSelectedCard(endorsement)}
+                        >
+                            <div className="relative w-96 h-56 rounded-2xl overflow-hidden flex flex-col items-center justify-center p-8 card-shadow card-fade">
+                                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent" />
+                                <div className="relative w-full h-full flex flex-col items-center">
+                                    <div className="logo-container">
+                                        <img
+                                            src={endorsement.imgUrl}
+                                            alt={endorsement.name}
+                                            className={`logo-image ${endorsement.logoClass || ''}`}
+                                        />
+                                    </div>
+                                    <div className="mt-auto">
+                                        <h3 className="card-title text-shadow">{endorsement.title}</h3>
+                                        <p className="card-subtitle">{endorsement.subtitle}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    ))}
+                </motion.div>
+            );
+
+            return (
+                <div className="w-full min-h-screen overflow-hidden py-20">
+                    <div className="page-gradient" />
+                    <div className="relative max-w-7xl mx-auto px-4">
+                        <div className="text-center mb-16">
+                            <h2 className="text-3xl font-light text-white tracking-wider mb-2">
+                                ENDORSEMENTS & ACCOLADES
+                            </h2>
+                            <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto" />
+                        </div>
+
+                        <div className="relative overflow-hidden">
+                            <div className="space-y-12 fade-edges">
+                                <CarouselRow direction={1} speed={40} />
+                                <CarouselRow direction={-1} speed={35} />
+                                <CarouselRow direction={1} speed={45} />
+                            </div>
+                        </div>
+
+                        <AnimatePresence>
+                            {selectedCard && (
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className={`fixed inset-0 z-50 flex items-center justify-center bg-black/95 ${isVisible ? 'visible' : ''}`}
+                                    onClick={() => setSelectedCard(null)}
+                                >
+                                    <motion.div
+                                        initial={{ scale: 0.9, opacity: 0 }}
+                                        animate={{ scale: 1, opacity: 1 }}
+                                        exit={{ scale: 0.9, opacity: 0 }}
+                                        transition={{ type: "spring", duration: 0.5 }}
+                                        className="relative w-full h-screen flex items-center justify-center"
+                                        onClick={e => e.stopPropagation()}
+                                    >
+                                        <img
+                                            src={selectedCard.imgUrl}
+                                            alt={selectedCard.name}
+                                            className={`absolute w-[800px] h-[800px] opacity-10 ${selectedCard.logoClass || ''}`}
+                                            style={{ filter: 'brightness(1.5) contrast(0.8)' }}
+                                        />
+                                        <div className="relative z-10 text-center max-w-4xl p-8">
+                                            <h2 className="text-6xl font-light tracking-wider mb-6 text-shadow">
+                                                {selectedCard.title}
+                                            </h2>
+                                            <h3 className="text-3xl text-gray-400 mb-12">
+                                                {selectedCard.subtitle}
+                                            </h3>
+                                            <p className="text-xl text-gray-300 leading-relaxed endorsement-text">
+                                                {selectedCard.content}
+                                            </p>
+                                        </div>
+                                    </motion.div>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<LogoCarousel />);
+    </script>
+</body>
+</html>
